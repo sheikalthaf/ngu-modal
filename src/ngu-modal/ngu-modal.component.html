@@ -1,0 +1,10 @@
+<div #modal class="modal" [class.in]="openModals">
+    <div class="main">
+        <div class="innerdiv">
+            <div #modalInner class="innerMain">
+                <ng-content></ng-content>
+            </div>
+        </div>
+        <div class="overlay" (click)="backdrop()"></div>
+    </div>
+</div>
