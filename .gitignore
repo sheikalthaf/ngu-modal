@@ -1,3 +1,9 @@
+# compiled output
+/dist
+/dist-server
+/tmp
+/out-tsc
+
 # Node generated files
 node_modules
 npm-debug.log

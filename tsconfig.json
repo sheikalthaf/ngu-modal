@@ -1,32 +1,24 @@
 {
-    "compilerOptions": {
-        "baseUrl": ".",
-        "declaration": true,
-        "stripInternal": true,
-        "experimentalDecorators": true,
-        "strictNullChecks": true,
-        "noImplicitAny": true,
-        "module": "es2015",
-        "moduleResolution": "node",
-        "paths": {
-            "@angular/core": ["node_modules/@angular/core"],
-            "rxjs/*": ["node_modules/rxjs/*"]
-        },
-        "rootDir": ".",
-        "outDir": "dist",
-        "sourceMap": true,
-        "inlineSources": true,
-        "target": "es5",
-        "skipLibCheck": true,
-        "lib": [
-            "es2015",
-            "dom"
-        ]
-    },
-    "files": [
-        "index.ts"
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
     ],
-    "angularCompilerOptions": {
-        "strictMetadataEmit": true
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "paths": {
+      "modal": ["dist/modal"],
+      "modal/*": ["dist/modal/*"]
     }
+  }
 }
